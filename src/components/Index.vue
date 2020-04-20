@@ -5,12 +5,12 @@
             Index Page
         </p>
       <p><ButtonCounter v-on:onClick="onButtonClick"></ButtonCounter></p>
-      <p><TestAttribute title="The Button Click Count:" v-bind:msg="subMsg"></TestAttribute></p>
+      <p><ShowMsg title="The Button Click Count:" v-bind:msg="subMsg"></ShowMsg></p>
     </div>
 </template>
 <script>
     import ButtonCounter from "./widgets/ButtonCounter";
-    import TestAttribute from "./widgets/TestAttribute";
+    import ShowMsg from "./widgets/ShowMsg";
 
     export default {
         name: 'Index',
@@ -24,7 +24,7 @@
       },
         components: {
           ButtonCounter,
-          TestAttribute
+          ShowMsg
         },
       methods:{
         onButtonClick:function (count) {
