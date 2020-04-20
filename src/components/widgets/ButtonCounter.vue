@@ -13,7 +13,7 @@
         methods:{
             onClick:function () {
                 this.count++;
-                this.$emit('onClick',this.count);
+                this.$emit('counter-click',this.count);
             }
         }
     }

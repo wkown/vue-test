@@ -4,7 +4,7 @@
         <p>
             Index Page
         </p>
-      <p><ButtonCounter v-on:onClick="onButtonClick"></ButtonCounter></p>
+      <p><ButtonCounter v-on:counter-click="onButtonClick"></ButtonCounter></p>
       <p><ShowMsg title="The Button Click Count:" v-bind:msg="subMsg"></ShowMsg></p>
     </div>
 </template>
